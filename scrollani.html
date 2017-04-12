@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>视区动画</title>
+	<link rel="stylesheet" type="text/css" href="components/font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ez-system/css/common.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/layouts.css">
+	<link rel="stylesheet" type="text/css" href="custome-animate/css/animate.css">
+	<!--[if lt IE 9]>
+	    <script src="components/response/response.min.js"></script>
+	<![endif]-->
+	<style type="text/css">
+		.ani-stage{
+			position: relative;
+			width:800px;
+			margin:0 auto;
+		}
+		.ani-stage:after{
+			content:'';
+			display: block;
+			visibility: hidden;
+			clear:both;
+		}
+		.ele-box{
+			float:left;
+		}
+		.box{
+			width:400px;
+			height:250px;
+		}
+		.red{
+			background-color: red;
+		}
+		.blue{
+			background-color: blue;
+		}
+		.aniview,.aniview-ex{
+			width:400px;
+			height:300px;
+			margin: 0 auto;
+			color:#f0f;
+			text-align: center;
+			line-height: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-main">
+		<div class="side-menu">
+			<div class="logo">
+				<a href="/">
+					<img src="layouts/images/logo.png" height="80" width="150">
+				</a>
+			</div>
+			<div class="side-inner">
+				<div class="placeholder"></div>
+				<ul class="side-inner-menu" id="side-inner-menu">
+					<li class="first-menu active" data-sub-menu="animation">
+						<a href="javascript:;">动画效果</a>
+					</li>
+					<ul class="second-ul active slide" id="animation">
+						<li class="second-menu">
+							<a href="fullscreen.html">全屏切换</a>
+						</li>
+						<li class="second-menu">
+							<a href="index.html">图片轮播</a>
+						</li>
+						<li class="second-menu">
+							<a href="scrollani.html">视区动画</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">汉堡图标</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">按钮</a>
+						</li>
+						<li class="second-menu">
+							<a href="animation.html">常用</a>
+						</li>
+					</ul>
+					<li class="first-menu" data-sub-menu="store">
+						<a href="javascript:;">萤石新商城</a>
+					</li>
+					<ul class="second-ul" id="store">
+						<li class="second-menu">
+							<a href="javascript:;">商城前端</a>
+						</li>
+						<li class="second-menu">
+							<a href="ez-system/index.html" target="_blank">商城后端</a>
+						</li>
+					</ul>
+					<li class="first-menu">
+						<a href="javascript:;">Angular Js</a>
+					</li>
+					<li class="first-menu">
+						<a href="javascript:;">React Js</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="ani-stage">
+				<div class="ele-box">
+					<div class="aniview" av-animation="fadeIn">
+						<p>
+							并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+							人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+						</p>
+					</div>
+				</div>
+				<div class="ele-box">
+					<div class="box red" av-animation="flipInX">
+					</div>
+				</div>
+			</div>
+			<div class="ani-stage">
+				<div class="ele-box">
+					<div class="aniview" av-animation="rotateInUpRight">
+						<p>
+							并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+							人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+						</p>
+					</div>
+				</div>
+				<div class="ele-box">
+					<div class="box blue" av-animation="rotateInUpLeft">
+					</div>
+				</div>
+			</div>
+			<div class="ani-stage">
+				<div class="ele-box">
+					<div class="aniview" av-animation="flipInY">
+						<p>
+							并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+							人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+						</p>
+					</div>
+				</div>
+				<div class="ele-box">
+					<div class="box red" av-animation="zoomIn">
+					</div>
+				</div>
+			</div>
+			<div class="ani-stage">
+				<div class="ele-box">
+					<div class="aniview" av-animation="zoomInLeft">
+						<p>
+							并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+							人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+						</p>
+					</div>
+				</div>
+				<div class="ele-box">
+					<div class="box blue" av-animation="pulse">
+					</div>
+				</div>
+			</div>
+			<div class="ani-stage">
+				<div class="ele-box">
+					<div class="aniview" av-animation="fadeIn">
+						<p>
+							并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+							人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+						</p>
+					</div>
+				</div>
+				<div class="ele-box">
+					<div class="box red" av-animation="bounceIn">
+					</div>
+				</div>
+			</div>
+			<div class="aniview" av-animation="bounceIn">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="flipInX">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="flipInY">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="pulse">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="rubberBand">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="shake">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="swing">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="wobble">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="fadeInDown">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="flipInX">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="lightSpeedIn">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview" av-animation="rotateIn">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview-ex" av-animation="rotateIn">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+			<div class="aniview-ex" av-animation="rotateIn">
+				<p>
+					并不是一切都消失在了时间的长河里。那时，我们坚定地相信某种东西，拥有能坚定地相信某种东西的自我。这样的信念绝不会毫无意义地烟消云散”——十六年的彷徨迷惑，换来一场决然的巡礼之年，当最后一块拼图集齐，重回完满的正五边形，剩下最稀薄的人，重建大地。
+					人若真的受伤，通常会无法直视伤口，想隐 藏它忘却它，把心 门关起来。这是一个成长的故事。要成长，伤痛就得大一点，伤口就得深一点。
+				</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="components/seajs/dist/sea.js"></script>
+	<script type="text/javascript">
+		seajs.use('./layouts/js/scrollani.js');
+	</script>
+</body>
+</html>

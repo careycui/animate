@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>动画效果总结</title>
+    <link rel="stylesheet" type="text/css" href="../components/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="fullpageslide/ys-slide.css">
+</head>
+
+<body>
+    <div class="ys-cont" id="ys-cont">
+        <div class="panel" style="background-color:#fff;" data-anchor-name="First">
+            <div class="panel-content">
+                <h3>动画效果研究总结</h3>
+                <div class="content-left">
+                    <ul class="tab-list">
+                        <li class="item" style="-webkit-animation-delay:.5s;-moz-animation-delay:.5s;
+                        animation-delay:.5s;">
+                            近期所用到动画效果
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.6s;-moz-animation-delay:.6s;
+                        animation-delay:.6s;">
+                            动画效果的实现
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.7s;-moz-animation-delay:.7s;animation-delay:.7s;">
+                            js与CSS3相结合
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.8s;-moz-animation-delay:.8s;animation-delay:.8s;">
+                            全屏滚动动画
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.9s;-moz-animation-delay:.9s;animation-delay:.9s;">
+                            推荐
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-right tab-content">
+                    <div class="item-cont">
+                        2D效果：渐变、位移<br>
+                        3D效果：翻页、立体翻转
+                        <div class="demo-jump">
+                            <a href="../../animate-chy/index.html" class="more">
+                                <span>DEMO</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-cont">
+                        javascript实现：模拟帧动画<br>
+                        requestAnimationFrame：请求帧动画<br>
+                        css3实现：animation/transition
+                    </div>
+                    <div class="item-cont">
+                        提高对动画的可控制度: CSS3提供的js事件<br>
+                        更为精细的控制: getComputedStyle/styleSheets
+                    </div>
+                    <div class="item-cont">
+                        总结
+                    </div>
+                    <div class="item-cont">
+                        http://www.yyyweb.com/demo/inner-show/bounce-js.html<br>
+                        http://greensock.com/tweenlite<br>
+                        http://cssanimate.com/<br>
+                        http://anicollection.github.io/#/<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="background-color:#fff;" data-anchor-name="Second">
+            <div class="panel-content">
+                <h3>近期使用的动画效果</h3>
+                <div class="content-left" style="width:50%">
+                    <ul class="tab-list">
+                        <li style="-webkit-animation-delay:.5s;-moz-animation-delay:.5s;">
+                        	2D平面变换效果
+                        </li>
+                        <li style="-webkit-animation-delay:.55s;-moz-animation-delay:.55s;list-style:none;">
+                        	 <p>
+                                主要是渐变、位移的变换，称之为过渡效果更合适。从一个状态过渡到另一个状态，实现方法简单：javascript模拟帧、css3实现。模拟帧利用javascript定时器实现，CSS3利用新特性实现。
+                            </p>
+                            <p>
+                                所有的过渡效果在2维平面内进行，在平面内完成位移、透明度、字体大小等CSS数值属性的变换。
+                                渐变：opacity的改变；位移：x/y轴的坐标移动
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-right" style="width:50%;">
+                    <ul class="tab-list" style="text-align:left;">
+                    	<li style="-webkit-animation-delay:.5s;-moz-animation-delay:.5s;">
+                        	3D立体空间变换效果
+                        </li>
+                        <li style="-webkit-animation-delay:.55s;-moz-animation-delay:.55s;list-style:none;">
+                            <p>
+                            	以假想的三维空间为舞台，涉及到x，y，z及视点的变化。
+                            	简而言之就是要在浏览器平面上表现出近大远小、多平面的效果。
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="demo-jump">
+                        <a href="../../animate-chy/index.html" class="more">
+                            <span>DEMO</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="background-color:#fff;" data-anchor-name="Third">
+            <div class="panel-content">
+                <h3>动画效果的实现</h3>
+                <div class="content-left">
+                    <ul class="tab-list">
+                        <li class="item" style="-webkit-animation-delay:.5s;-moz-animation-delay:.5s;">
+                            javascript(模拟帧动画)
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.55s;-moz-animation-delay:.55s;">
+                            CSS
+                        </li>
+                        <li class="item" style="-webkit-animation-delay:.65s;-moz-animation-delay:.65s;">
+                            requestAnimationFrame
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-right tab-content">
+                    <div class="item-cont">
+                        <p>
+                            通过定时器模拟帧实现逐帧动画（人眼看到的帧数在24以上就会感觉到流畅），但是由于定时器的局限性，出现了两种情况：保时动画、保帧动画。普遍会采用保时动画。
+                        </p>
+                        <div class="demo-jump">
+                            <a href="custome.html" class="more">
+                                <span>DEMO</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-cont">
+                        <p>
+                            css3 的新特性实现
+                            transform/transition/animation<br>
+                        </p>
+                        <p>
+                            补间动画与逐帧动画
+                        </p>
+                        <p>
+                            3D的实现：通过视点(perspective)、transform-style: preserve-3d来完成3D效果。
+                            <a href="perspective.html"><i class="fa fa-mail-forward"></i></a><br>
+                        </p>
+                         <p>
+                            拆分复杂动画
+                        </p>
+                        <div class="demo-jump">
+                            <a href="thirdD.html" class="more">
+                                <span>DEMO</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-cont">
+                            动画帧请求回调函数列表
+                        <p>
+                            不需要使用者指定循环间隔时间，浏览器会基于当前页面是否可见、CPU的负荷情况等来自行决定最佳的帧速率，从而更合理地使用CPU。
+                        </p>
+                        <p>
+                            特性：
+                            A．  会集中每帧的DOM操作，在一次reflow中完成全部重绘，reflow的时间依据浏览器的刷新频率而定。减少了重绘次数，集中操作，解决了不同浏览器的刷新频率不同的问题。
+                            B．  隐藏、不可见元素，不进行重绘。（更少内存，GPU的使用）
+
+                        </p>
+                        <div class="demo-jump">
+                            <a href="custome.html" class="more">
+                                <span>DEMO</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="background-color:#fff;" data-anchor-name="Forth">
+            <div class="panel-content">
+                <h3>js与css3相结合</h3>
+                <div class="content-left" style="width:100%;position:relative;">
+                    <div class="item-cont" style="display:block;">
+                       <p> 一些最有用但鲜为人知javascript技巧，就是利用监听Dom事件控制CSS transitions(过渡)和animations(动画)。如：与animations(动画)相关的animationEnd,animationStart和animationIteration；与transitions(过渡)相关的transitonEnd。<br>
+                        通过样式表（styleSheets）、getComputedStyle做到更详细的监控
+                       </p>
+                   </div>
+                </div>
+                <div class="demo-jump">
+                    <a href="bg-change.html" class="more">
+                        <span>DEMO</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="background-color:#fff;" data-anchor-name="Fifth">
+            <div class="panel-content">
+                <h3>全屏滚动动画一些总结</h3>
+                <div class="content-left">
+                    <ul class="tab-list">
+                        <li>使用同一个元素控制动画</li>
+                        <li>复杂动画可用嵌套的多个元素表示</li>
+                        <li>提取公用动画</li>
+                        <li>避免transform变换冲突</li>
+                        <li>采用居中定位原则</li>
+                        <li>不使用动画关键帧定位元素</li>
+                    </ul>
+                </div>
+                <div class="content-right tab-content">
+                    <div class="item-cont">
+                        <dl>
+                            <dt>类控制</dt>
+                            <dd>
+                                element{/* 样式 */}<br>
+                                .active element{ [/* 最终定位 */] /* 动画元素 */}
+                            </dd>
+                            <dt>animation-play-state控制</dt>
+                            <dd>
+                                element{/* 样式 */ /* 动画元素 */}<br>
+                                .animate{ animation-play-state: paused }<br>
+                                .active element{ [/* 最终定位 */]  animation-play-state: running } 
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="item-cont">
+                       <p>
+                            为了使动画模块化，便于管理扩展
+                       </p>
+                    </div>
+                    <div class="item-cont">
+                        <p>
+                            一个场景：滚动到每屏时，页面动画元素A从左侧旋转淡入，页面元素B重底部旋转淡入等等，
+                            每个元素都具有‘淡入’的效果。
+                        </p>
+                    </div>
+                    <div class="item-cont">
+                        <p>
+                            DOM a 具有旋转（0-360deg）、放大（0-100%）的动画效果。这两个动画效果具有通性，可能
+                            在最初已被提取为公共动画（rotate1、scale1）。当在为元素a应用两个动画时
+                            a {animation:rotate1 1s,scale1 1s}旋转效果会被残忍的覆盖掉。
+                        </p>
+                    </div>
+                    <div class="item-cont">
+                        <p>
+                            以中心点为参考点定位元素。主要处理不同屏幕尺寸的显示问题以及可以统一管理。
+                        </p>
+                    </div>
+                    <div class="item-cont">
+                        <p>
+                            谨慎使用animation-fill-mode（可以以动画帧决定元素开始结束位置）<br>
+                            translate有风险
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="background-color:#fff;" data-anchor-name="Sixth">
+            <div class="panel-content">
+                <h3>推荐</h3>
+                <div class="content-left" style="width:100%">
+                    http://www.yyyweb.com/demo/inner-show/bounce-js.html<br>
+                    http://greensock.com/tweenlite<br>
+                    http://cssanimate.com/<br>
+                    http://anicollection.github.io/#/<br>
+                    http://cubic-bezier.com/<br>
+                    http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../components/seajs/dist/sea.js"></script>
+    <script type="text/javascript">
+        seajs.use('./js/fullpage.js');
+    </script>
+</body>
+
+</html>

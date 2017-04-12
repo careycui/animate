@@ -1,0 +1,26 @@
+.page .page-header{
+	height: 60px;
+}
+.page .page-body{
+	position:relative;
+	padding: 10px 20px;
+}
+	.content{
+		position:relative;
+		width:1149px;
+		margin: 0 auto;
+		padding-bottom: 60px;
+	}
+		.table-container{
+			margin-top: 20px;
+		}
+		.table-container .tab-nav{
+			background-color: #fff;
+			box-shadow: 0 1px 1px rgba(0,0,0,.2);
+		}
+			.table-container .tab-content{
+				padding:20px 0;
+			}
+				.table-container .tab-panel{
+					padding:0;
+				}

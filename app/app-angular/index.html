@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Test Demo</title>
+	<link rel="stylesheet" type="text/css" href="components/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="components/node_modules/seajs/dist/sea.js"></script>
+	<script type="text/javascript" src="components/node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="seajs-config.js"></script>
+	<script type="text/javascript" src="components/node_modules/angular/angular.min.js"></script>
+	<style type="text/css">
+	     *{
+	     	margin:0;
+	     	padding:0;
+	     }
+	     html{
+	     	width:100%;
+	     	height:100%;
+	     }
+	     body{
+	     	/*background-color: #CCCC99;*/
+	     	background:url(app/images/bg.jpg) no-repeat center center;
+	     	background-size: cover;
+	     	width:100%;
+	     	height:100%;
+	     }
+	     a{
+	     	cursor:pointer !important;
+	     }
+		.login-box{
+			min-width: 350px;
+			max-width: 634px;
+			height:320px;
+			position: absolute;
+			top:50%;
+			margin-top:-200px;
+			padding:10px 10px 20px 10px;
+			border-radius: 10px;
+			box-shadow:0px 0px 15px #666;
+			background-color: #333;
+		}
+		.login-box .login-box-footer{
+			width:40px;
+			height:60px;
+			border-left:1px solid #D6D6D6;
+			border-right:1px solid #D6D6D6;
+			position:absolute;
+			left:50%;
+			margin-left:-20px;
+			bottom:-55px;
+			z-index:1;
+			box-shadow: 0px -10px 10px #B9B9B9 inset;
+			-webkit-box-shadow: 0px -10px 10px #B9B9B9 inset;
+			-moz-box-shadow: 0px -10px 10px #B9B9B9 inset;
+			background-color: #333;
+
+			transform:perspective(200px) rotateX(30deg);
+			-webkit-transform:perspective(200px) rotateX(30deg);
+			-moz-transform:perspective(200px) rotateX(30deg);
+		}
+		.login-box .footer-circle{
+			width:150px;
+			height:150px;
+			border-radius: 100%;
+			background-color: #333;
+			border:1px solid #666;
+			position:absolute;
+			bottom:-140px;
+			left:50%;
+			margin-left: -73px;
+			box-shadow: 0px 0px 15px #000;
+			-webkit-box-shadow: 0px 0px 15px #000;
+			-moz-box-shadow: 0px 0px 15px #000;
+
+			transform:rotateX(110deg);
+			-webkit-transform:rotateX(110deg);
+			-moz-transform:rotateX(110deg);
+		}
+		.login-box .login-box-content{
+			position:relative;
+			width:100%;
+			height:280px;
+			background-color: #fff;
+			z-index:10;
+			border-radius: 10px;
+
+			padding:20px 40px;
+		}
+		.login-box .box-content-top{
+			display:block;
+			width:100%;
+			height:240px;
+		}
+		.box-content-top .nav{
+			border-bottom-color: #339966 !important;
+		}
+		.box-content-top .nav li{
+			width:63px !important;
+		}
+		.box-content-top .nav a{
+			color:#339966 !important;
+			
+		}
+		.box-content-top .nav .active a{
+			border-top-color: #339966 !important;
+			border-left-color: #339966 !important;
+			border-right-color:#339966 !important;
+		}
+		.box-content-top .nav .active a:hover{
+			border-top-color: #339966 !important;
+			border-left-color: #339966 !important;
+			border-right-color:#339966 !important;
+		}
+		.box-content-top .nav li.active:after{
+			content:'';
+			display:block;
+			height:43px;
+			width:43px;
+			border-bottom:1px solid #339966;
+			border-right:1px solid #339966;
+			position:absolute;
+			left:9px;
+			top:20px;
+
+			transform:rotateZ(45deg);
+			-webkit-transform:rotateZ(45deg);
+		}
+		.login-box .box-content-bottom{
+			margin-top: 35px;
+			display:block;
+			width:100%;
+			height:149px;
+		}
+		#login-form{
+			height:84px;
+			position:absolute;
+			top:50%;
+			margin-top: -35px;
+			width:100%;
+		}
+		#login-btn{
+			padding-left:0px;
+		}
+	</style>
+</head>
+<body ng-app>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4 login-box">
+				<div class="login-box-content">
+					<div class="box-content-top" role="navigation">
+						<ul class="nav nav-tabs" id="login-nav" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#login" role="tab">登录</a>
+							</li>
+							<li role="presentation">
+								<a href="#register" role="tab">注册</a>
+							</li>
+						</ul>
+						<div class="box-content-bottom tab-content">
+							<div id="login" class="tab-pane active" role="tabpanel">
+								<form class="form-horizontal" id="login-form">
+									<div class="form-group">
+										<label for="iAccount" class="col-xs-2 col-sm-2 col-md-2 control-label">&nbsp;</label>
+										<div class="col-xs-8 col-sm-8 col-md-8 input-group">
+											<span class="input-group-addon">
+												<span class="glyphicon glyphicon-user"></span>
+											</span>
+											<input type="text" class="form-control" id="iAccount" placeholder="账号">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="iPassword" class="col-xs-2 col-sm-2 col-md-2 control-label">&nbsp;</label>
+										<div class="col-xs-8 col-sm-8 col-md-8 input-group">
+											<span class="input-group-addon">
+												<span class="glyphicon glyphicon-lock"></span>
+											</span>
+											<input type="password" class="form-control" id="iPassword" placeholder="密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2" id="login-btn">
+											<button type="submit" class="btn btn-success">登录</button>
+											<button type="submit" class="btn btn-default">重置</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div id="register" class="tab-pane fade" role="tabpanel">
+								test register
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="login-box-footer">
+				</div>
+				<div class="footer-circle"></div>
+			</div>
+		</div>
+	</div>
+	<!-- <div>
+		<input type="text" ng-model="vname" name="vname"/>
+		{{vname}}
+	</div> -->
+	<script type="text/javascript">
+		seajs.use('index');
+	</script>
+</body>
+</html>

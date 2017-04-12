@@ -1,0 +1,22 @@
+.page .page-header{
+	height: 60px;
+}
+.page .page-body{
+	position:relative;
+	padding: 10px 20px;
+}
+	.content{
+		position:relative;
+		width:1149px;
+		margin: 0 auto;
+		padding-bottom: 160px;
+	}
+		.form-container{
+			margin-top: 20px;
+		}
+.base-header{
+	margin-bottom: 20px;
+}
+.base-content{
+	margin-bottom:20px;
+}

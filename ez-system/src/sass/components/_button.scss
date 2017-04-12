@@ -1,0 +1,135 @@
+@import '../base/base';
+
+.btn{
+	display: inline-block;
+	min-width: $btnMinWidth;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: $btnPaddingV $btnPaddingH;
+    font-size: $baseFontSize;
+    line-height: $btnLineHeight;
+    border-radius: $btnRadius;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16),0 2px 10px rgba(0,0,0,0.12);
+
+
+	-webkit-transition:all .25s;
+	-moz-transition:all .25s;
+	-ms-transition:all .25s;
+	-o-transition:all .25s;
+	transition:all .25s;
+}
+.btn:hover{
+	box-shadow: 0 2px 7px rgba(0,0,0,0.3),0 8px 7px rgba(0,0,0,0.3);
+}
+.btn-small {
+	padding: $btnSmallPaddingV $btnSmallPaddingH;
+	font-size: $baseSmallFontSize;
+}
+.btn-big {
+	padding: $btnBigPaddingV $btnBigPaddingH;
+	font-size: $baseBigFontSize;
+}
+.btn-default{
+	background-color: map-get($btnDefault,bgColor);
+	color: map-get($btnDefault,fontColor);
+}
+.btn-default:hover{
+	background-color: map-get($btnDefault,bgHoverColor);
+	color: map-get($btnDefault,fontHoverColor);
+}
+.btn-info{
+	background-color: map-get($btnInfo,bgColor);
+	color: map-get($btnInfo,fontColor);
+}
+.btn-info:hover{
+	background-color: map-get($btnInfo,bgHoverColor);
+	color: map-get($btnInfo,fontHoverColor);
+}
+.btn-warning{
+	background-color: map-get($btnWarning,bgColor);
+	color: map-get($btnWarning,fontColor);
+}
+.btn-warning:hover{
+	background-color: map-get($btnWarning,bgHoverColor);
+	color: map-get($btnWarning,fontHoverColor);
+}
+.btn-primary{
+	background-color: map-get($btnPrimary,bgColor);
+	color:map-get($btnPrimary,fontColor);
+}
+.btn-primary:hover{
+	background-color: map-get($btnPrimary,bgHoverColor);
+	color: map-get($btnPrimary,fontHoverColor);
+}
+.btn-danger{
+	background-color: map-get($btnDanger,bgColor);
+	color: map-get($btnDanger,fontColor);
+}
+.btn-danger:hover{
+	background-color: map-get($btnDanger,bgHoverColor);
+	color: map-get($btnDanger,fontHoverColor);
+}
+.btn-group{
+	position:relative;
+	display:inline-block;
+	vertical-align: middle;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.16),0 2px 10px rgba(0,0,0,0.12);
+	background-color: #fff;
+}
+	.btn-group button{
+		background-color: #fff;
+		color:#000;
+		border:0;
+		box-shadow: none;
+		border-radius: 0;
+		margin:0;
+	}
+	.btn-group button:active{
+		box-shadow: inset 0 0 2px rgba(0,0,0,.5);
+	}
+.btn-group-info{
+	background-color: #00bcd4;
+	color:#fff;
+}
+	.btn-group-info button{
+		background-color: #00bcd4;
+		color:#fff;
+	}
+.btn-group-primary{
+	background-color: #2196f3;
+	color:#fff;
+}
+	.btn-group-primary button{
+		background-color: #2196f3;
+		color:#fff;
+	}
+.btn-group-warning{
+	background-color: #ff9800;
+	color:#fff;
+}
+	.btn-group-warning button{
+		background-color: #ff9800;
+		color:#fff;
+	}
+.btn-group-danger{
+	background-color: #c62828;
+	color:#fff;
+}
+	.btn-group-danger button{
+		background-color: #c62828;
+		color:#fff;
+	}

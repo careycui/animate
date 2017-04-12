@@ -1,0 +1,130 @@
+.btn {
+  display: inline-block;
+  min-width: 40px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4em;
+  border-radius: 2px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s; }
+
+.btn:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3), 0 8px 7px rgba(0, 0, 0, 0.3); }
+
+.btn-small {
+  padding: 2px 8px;
+  font-size: 12px; }
+
+.btn-big {
+  padding: 10px 16px;
+  font-size: 18px; }
+
+.btn-default {
+  background-color: #fafafa;
+  color: #5e5e5e; }
+
+.btn-default:hover {
+  background-color: white;
+  color: #919191; }
+
+.btn-info {
+  background-color: #00bcd4;
+  color: #fff; }
+
+.btn-info:hover {
+  background-color: #00d3ee;
+  color: #fff; }
+
+.btn-warning {
+  background-color: #ff9800;
+  color: #fff; }
+
+.btn-warning:hover {
+  background-color: #ffad33;
+  color: #fff; }
+
+.btn-primary {
+  background-color: #2196f3;
+  color: #fff; }
+
+.btn-primary:hover {
+  background-color: #51adf6;
+  color: #fff; }
+
+.btn-danger {
+  background-color: #c62828;
+  color: #fff; }
+
+.btn-danger:hover {
+  background-color: #da4747;
+  color: #fff; }
+
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: #fff; }
+
+.btn-group button {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0; }
+
+.btn-group button:active {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.btn-group-info {
+  background-color: #00bcd4;
+  color: #fff; }
+
+.btn-group-info button {
+  background-color: #00bcd4;
+  color: #fff; }
+
+.btn-group-primary {
+  background-color: #2196f3;
+  color: #fff; }
+
+.btn-group-primary button {
+  background-color: #2196f3;
+  color: #fff; }
+
+.btn-group-warning {
+  background-color: #ff9800;
+  color: #fff; }
+
+.btn-group-warning button {
+  background-color: #ff9800;
+  color: #fff; }
+
+.btn-group-danger {
+  background-color: #c62828;
+  color: #fff; }
+
+.btn-group-danger button {
+  background-color: #c62828;
+  color: #fff; }

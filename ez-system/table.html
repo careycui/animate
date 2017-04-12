@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>表格</title>
+    <link rel="stylesheet" type="text/css" href="../components/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dist/css/components/_button.css">	
+    <link rel="stylesheet" type="text/css" href="css/table-index.css">
+</head>
+
+<body>
+    <div class="page" id="page">
+        <div class="page-header">
+            <div class="header-top active" id="header-top">
+                <div class="nav nav-top">
+                    <div class="burger hover-cover" id="menu">
+                        <div class="burger-part">
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.png" height="42" width="101">
+                    </a>
+                </div>
+                <div class="top-menu">
+                    <ul class="top-menu-first">
+                        <li>
+                            <a href="javascript:;" class="hover-cover panel-open" id="user-panel">
+                                <i class="fa fa-home fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-menu-second">
+                        <li>
+                            <a href="javascript:;" class="hover-cover">
+                                <i class="fa fa-user fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="hover-cover">
+                                <i class="fa fa-bell fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="hover-cover">
+                                <i class="fa fa-list fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="hover-cover">
+                                <i class="fa fa-cog fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-menu-third">
+                        <li>
+                            <a href="javascript:;" class="hover-cover">
+                                <i class="fa fa-sign-out fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-body">
+        	<div class="content">
+	        	<div class="table-container">
+	        		<div class="block-header">
+	        			<h2>表格样式
+	        				<small>tab table/option table</small>
+	        			</h2>
+	        		</div>
+	        		<div class="card table-card">
+	        			<div class="card-header">
+	        				<h4>表格1
+	        					<small>第一种类型的表格</small>
+	        				</h4>
+	        				<div class="tool-bar">
+	        					<div class="select">
+		        					<select>
+		        						<option>我的任务</option>
+		        						<option>我未完成的任务</option>
+		        						<option>我已完成的任务</option>
+		        						<option>我创建的任务</option>
+		        					</select>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="card-menu">
+	        				<div class="btn-group">
+	        					<button type="button" class="btn">全选</button>
+	        					<button type="button" class="btn">新建</button>
+	        					<button type="button" class="btn">完成</button>
+	        					<button type="button" class="btn">删除</button>
+	        				</div>
+	        			</div>
+	        			<div class="card-body">
+	        				<table class="card-table">
+	        					<thead>
+	        						<tr>
+	        							<th width="6%">编号</th>
+	        							<th width="30%">任务名称</th>
+	        							<th width="8%">执行人</th>
+	        							<th width="16%">截止时间</th>
+	        							<th width="8%">紧急程度</th>
+	        							<th width="6%">状态</th>
+	        							<th width="6%">创建人</th>
+	        							<th width="20%">操作</th>
+	        						</tr>
+	        					</thead>
+	        					<tbody>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-default">分配</button>
+	        								<button type="button" class="btn btn-default">编辑</button>
+	        								<button type="button" class="btn btn-default">删除</button>
+	        							</td>
+	        						</tr>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-default">分配</button>
+	        								<button type="button" class="btn btn-default">编辑</button>
+	        								<button type="button" class="btn btn-default">删除</button>
+	        							</td>
+	        						</tr>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-default">分配</button>
+	        								<button type="button" class="btn btn-default">编辑</button>
+	        								<button type="button" class="btn btn-default">删除</button>
+	        							</td>
+	        						</tr>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-default">分配</button>
+	        								<button type="button" class="btn btn-default">编辑</button>
+	        								<button type="button" class="btn btn-default">删除</button>
+	        							</td>
+	        						</tr>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-default">分配</button>
+	        								<button type="button" class="btn btn-default">编辑</button>
+	        								<button type="button" class="btn btn-default">删除</button>
+	        							</td>
+	        						</tr>
+	        						<tr>
+	        							<td>1</td>
+	        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+	        							<td>崔海雨</td>
+	        							<td>2015-12-02 23:59:59</td>
+	        							<td>按部就班</td>
+	        							<td>已分配</td>
+	        							<td>陈立华</td>
+	        							<td>
+	        								<button type="button" class="btn btn-default">完成</button>
+	        								<button type="button" class="btn btn-primary">分配</button>
+	        								<button type="button" class="btn btn-info">编辑</button>
+	        								<button type="button" class="btn btn-warning">删除</button>
+	        							</td>
+	        						</tr>
+	        					</tbody>
+	        				</table>
+	        			</div>
+	        			<div class="card-footer">
+	        				<div class="pagination">
+		        				<ul class="no-list-style pagination-ul">
+		        					<li class="disable">
+		        						<a href="javascript:;">
+		        							&lt;
+		        						</a>
+		        					</li>
+		        					<li class="active">
+		        						<a href="javascript:;">1</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">2</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">3</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">4</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">5</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">6</a>
+		        					</li>
+		        					<li>
+		        						<a href="javascript:;">
+		        							&gt;
+		        						</a>
+		        					</li>
+		        				</ul>
+	        				</div>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	<div class="table-container">
+	        		<div class="block-header">
+	        			<h2>任务列表
+	        				<small>前端组</small>
+	        			</h2>
+	        		</div>
+	        		<ul class="tab-nav no-list-style" data-tab-content="tab-content" id="profile-tab" >
+						<li class="tab-nav-item active">
+							我的任务
+						</li>
+						<li class="tab-nav-item">
+							我未完成的任务
+						</li>
+						<li class="tab-nav-item">
+							我已完成的任务
+						</li>
+						<li class="tab-nav-item">
+							我创建的任务
+						</li>
+					</ul>
+					<div class="tab-content" id="tab-content">
+						<div class="tab-panel fade in active">
+							<div class="card table-card">
+								<div class="card-header">
+			        				<h4>表格1
+			        					<small>第一种类型的表格</small>
+			        				</h4>
+			        			</div>
+			        			<div class="card-body">
+			        				<table class="card-table">
+			        					<thead>
+			        						<tr>
+			        							<th width="6%">编号</th>
+			        							<th width="30%">任务名称</th>
+			        							<th width="8%">执行人</th>
+			        							<th width="16%">截止时间</th>
+			        							<th width="8%">紧急程度</th>
+			        							<th width="6%">状态</th>
+			        							<th width="6%">创建人</th>
+			        							<th width="20%">操作</th>
+			        						</tr>
+			        					</thead>
+			        					<tbody>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        					</tbody>
+			        				</table>
+			        			</div>
+			        			<div class="card-footer">
+			        				<div class="pagination">
+				        				<ul class="no-list-style pagination-ul">
+				        					<li class="disable">
+				        						<a href="javascript:;">
+				        							&lt;
+				        						</a>
+				        					</li>
+				        					<li class="active">
+				        						<a href="javascript:;">1</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">2</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">3</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">4</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">5</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">6</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">
+				        							&gt;
+				        						</a>
+				        					</li>
+				        				</ul>
+			        				</div>
+			        			</div>
+			        		</div>
+						</div>
+						<div class="tab-panel fade">
+							<div class="card table-card">
+		        				<div class="card-header">
+			        				<h4>表格1
+			        					<small>第一种类型的表格</small>
+			        				</h4>
+			        			</div>
+			        			<div class="card-body">
+			        				<table class="card-table">
+			        					<thead>
+			        						<tr>
+			        							<th width="6%">编号</th>
+			        							<th width="30%">任务名称</th>
+			        							<th width="8%">执行人</th>
+			        							<th width="16%">截止时间</th>
+			        							<th width="8%">紧急程度</th>
+			        							<th width="6%">状态</th>
+			        							<th width="6%">创建人</th>
+			        							<th width="20%">操作</th>
+			        						</tr>
+			        					</thead>
+			        					<tbody>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        					</tbody>
+			        				</table>
+			        			</div>
+			        			<div class="card-footer">
+			        				<div class="pagination">
+				        				<ul class="no-list-style pagination-ul">
+				        					<li class="disable">
+				        						<a href="javascript:;">
+				        							&lt;
+				        						</a>
+				        					</li>
+				        					<li class="active">
+				        						<a href="javascript:;">1</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">2</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">3</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">4</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">5</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">6</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">
+				        							&gt;
+				        						</a>
+				        					</li>
+				        				</ul>
+			        				</div>
+			        			</div>
+			        		</div>
+						</div>
+						<div class="tab-panel fade">
+							<div class="card table-card">
+								<div class="card-header">
+			        				<h4>表格1
+			        					<small>第一种类型的表格</small>
+			        				</h4>
+			        			</div>
+			        			<div class="card-body">
+			        				<table class="card-table">
+			        					<thead>
+			        						<tr>
+			        							<th width="6%">编号</th>
+			        							<th width="30%">任务名称</th>
+			        							<th width="8%">执行人</th>
+			        							<th width="16%">截止时间</th>
+			        							<th width="8%">紧急程度</th>
+			        							<th width="6%">状态</th>
+			        							<th width="6%">创建人</th>
+			        							<th width="20%">操作</th>
+			        						</tr>
+			        					</thead>
+			        					<tbody>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        					</tbody>
+			        				</table>
+			        			</div>
+			        			<div class="card-footer">
+			        				<div class="pagination">
+				        				<ul class="no-list-style pagination-ul">
+				        					<li class="disable">
+				        						<a href="javascript:;">
+				        							&lt;
+				        						</a>
+				        					</li>
+				        					<li class="active">
+				        						<a href="javascript:;">1</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">2</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">3</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">4</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">5</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">6</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">
+				        							&gt;
+				        						</a>
+				        					</li>
+				        				</ul>
+			        				</div>
+			        			</div>
+			        		</div>
+						</div>
+						<div class="tab-panel fade">
+							<div class="card table-card">
+								<div class="card-header">
+			        				<h4>表格1
+			        					<small>第一种类型的表格</small>
+			        				</h4>
+			        			</div>
+			        			<div class="card-body">
+			        				<table class="card-table">
+			        					<thead>
+			        						<tr>
+			        							<th width="6%">编号</th>
+			        							<th width="30%">任务名称</th>
+			        							<th width="8%">执行人</th>
+			        							<th width="16%">截止时间</th>
+			        							<th width="8%">紧急程度</th>
+			        							<th width="6%">状态</th>
+			        							<th width="6%">创建人</th>
+			        							<th width="20%">操作</th>
+			        						</tr>
+			        					</thead>
+			        					<tbody>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        					</tbody>
+			        				</table>
+			        			</div>
+			        			<div class="card-footer">
+			        				<div class="pagination">
+				        				<ul class="no-list-style pagination-ul">
+				        					<li class="disable">
+				        						<a href="javascript:;">
+				        							&lt;
+				        						</a>
+				        					</li>
+				        					<li class="active">
+				        						<a href="javascript:;">1</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">2</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">3</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">4</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">5</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">6</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">
+				        							&gt;
+				        						</a>
+				        					</li>
+				        				</ul>
+			        				</div>
+			        			</div>
+			        		</div>
+						</div>
+						<div class="tab-panel fade">
+							<div class="card table-card">
+								<div class="card-header">
+			        				<h4>表格1
+			        					<small>第一种类型的表格</small>
+			        				</h4>
+			        			</div>
+			        			<div class="card-body">
+			        				<table class="card-table">
+			        					<thead>
+			        						<tr>
+			        							<th width="6%">编号</th>
+			        							<th width="30%">任务名称</th>
+			        							<th width="8%">执行人</th>
+			        							<th width="16%">截止时间</th>
+			        							<th width="8%">紧急程度</th>
+			        							<th width="6%">状态</th>
+			        							<th width="6%">创建人</th>
+			        							<th width="20%">操作</th>
+			        						</tr>
+			        					</thead>
+			        					<tbody>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        						<tr>
+			        							<td>1</td>
+			        							<td>新版PC商城首页及运营系统站点管理设置（V1.3）</td>
+			        							<td>崔海雨</td>
+			        							<td>2015-12-02 23:59:59</td>
+			        							<td>按部就班</td>
+			        							<td>已分配</td>
+			        							<td>陈立华</td>
+			        							<td>
+			        								<button type="button" class="btn btn-default">
+			        									<i class="fa fa-check"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-primary">
+			        									<i class="fa fa-user-plus"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-info">
+			        									<i class="fa fa-pencil"></i>
+			        								</button>
+			        								<button type="button" class="btn btn-warning">
+			        									<i class="fa fa-trash-o"></i>
+			        								</button>
+			        							</td>
+			        						</tr>
+			        					</tbody>
+			        				</table>
+			        			</div>
+			        			<div class="card-footer">
+			        				<div class="pagination">
+				        				<ul class="no-list-style pagination-ul">
+				        					<li class="disable">
+				        						<a href="javascript:;">
+				        							&lt;
+				        						</a>
+				        					</li>
+				        					<li class="active">
+				        						<a href="javascript:;">1</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">2</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">3</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">4</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">5</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">6</a>
+				        					</li>
+				        					<li>
+				        						<a href="javascript:;">
+				        							&gt;
+				        						</a>
+				        					</li>
+				        				</ul>
+			        				</div>
+			        			</div>
+			        		</div>
+						</div>
+					</div>
+	        	</div>
+
+        	</div>
+        </div>
+        <div class="side-bar" id="side-bar">
+			<div class="nav-title">
+				<h2>MENU</h2>
+			</div>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<span class="nav-sign"><i class="fa fa-home"></i></span>
+						<span class="nav-tip">首页</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+				<li class="nav-item" data-sub-menu="task-sub">
+					<a class="nav-link" href="javascript:;">
+						<span class="nav-sign"><i class="fa fa-table"></i></span>
+						<span class="nav-tip">表格</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+				<div class="sub-nav" id="task-sub">
+					<li class="nav-item  sub">
+						<a class="nav-link">
+							<span class="sub-nav-tip">我的任务</span>
+							<div class="bottom-line"></div>
+						</a>
+					</li>
+					<li class="nav-item  sub">
+						<a class="nav-link">
+							<span class="sub-nav-tip">所有任务</span>
+							<div class="bottom-line"></div>
+						</a>
+					</li>
+				</div>
+				<li class="nav-item" data-sub-menu="report-sub">
+					<a class="nav-link" href="form.html">
+						<span class="nav-sign"><i class="fa fa-newspaper-o"></i></span>
+						<span class="nav-tip">表单</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+				<div class="sub-nav" id="report-sub">
+					<li class="nav-item sub">
+						<a class="nav-link">
+							<span class="sub-nav-tip">我的周报</span>
+							<div class="bottom-line"></div>
+						</a>
+					</li>
+					<li class="nav-item  sub">
+						<a class="nav-link">
+							<span class="sub-nav-tip">所有周报</span>
+							<div class="bottom-line"></div>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/animation-util.js"></script>
+	<script type="text/javascript" src="js/table-index.js"></script>
+</body>
+
+</html>

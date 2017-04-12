@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Demo</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="../components/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link href="css/index.css" rel="stylesheet">
+<style type="text/css"></style>
+</head>
+<body style="overflow:hidden;">
+	<div class="page" id="page">
+		<div class="page-header">
+			<div class="header-top" id="header-top">
+				<div class="nav nav-top">
+					<div class="burger hover-cover" id="top-menu">
+						<div class="burger-part">
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<a href="/">
+						<img src="img/logo.png" height="42" width="101">
+					</a>
+				</div>
+				<div class="top-menu">
+					<ul class="top-menu-first">
+						<li>
+							<a href="javascript:;" class="hover-cover panel-open" id="user-panel">
+								<i class="fa fa-home fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="top-menu-second">
+						<li>
+							<a href="javascript:;" class="hover-cover">
+								<i class="fa fa-user fa-2x"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="hover-cover">
+								<i class="fa fa-bell fa-2x"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="hover-cover">
+								<i class="fa fa-list fa-2x"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="hover-cover">
+								<i class="fa fa-cog fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="top-menu-third">
+						<li>
+							<a href="javascript:;" class="hover-cover">
+								<i class="fa fa-sign-out fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-content">
+				<!-- <div class="first">
+				</div>
+				<div class="second">
+				</div> -->
+				<div style="position:relative;height:100%;margin:0 auto;padding-top:10px;overflow:hidden" id="test">
+					<div class="view-section">
+						<div class="block-header">
+							<h2>个人中心</h2>
+							<small>个人信息,公告,待办事项</small>
+						</div>
+						<div class="view-panel">
+							<div class="panel-left">
+								<div class="user-pic">
+									<div class="pic">
+										<img src="img/user.jpg" class="img-responsive">
+									</div>
+									<div class="pic-info color-white">
+										<h2 class="color-white">
+											小丸子
+										</h2>
+										web前端工程师
+									</div>
+									<div class="user-edit" id="user-edit">
+										<i class="fa fa-pencil fa-2x"></i>
+									</div>
+								</div>
+								<div class="user-info">
+									<h2>
+										信息
+									</h2>
+									<ul class="user-info-list">
+										<li>
+											<i class="fa fa-mobile c-width"></i>
+											15067134427
+										</li>
+										<li>
+											<i class="fa fa-envelope c-width"></i>
+											cuihaiyu@hikvision.com.cn
+										</li>
+										<li>
+											<i class="fa fa-wrench c-width"></i>
+											互联网业务中心
+										</li>
+										<li>
+											<i class="fa fa-map-marker c-width"></i>
+											一期#7楼
+										</li>
+										<li>
+											<i class="fa fa-male c-width"></i>
+											男
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="panel-right">
+								<ul class="tab-nav no-list-style" data-tab-content="tab-content" id="profile-tab">
+									<li class="tab-nav-item active">
+										公告
+									</li>
+									<li class="tab-nav-item">
+										任务
+									</li>
+									<li class="tab-nav-item">
+										周报
+									</li>
+									<li class="tab-nav-item">
+										留言
+									</li>
+								</ul>
+								<div class="tab-content" id="tab-content">
+									<div class="tab-panel fade in active">
+										<div class="timeline">
+											<div class="tl-view view-blue">
+												<div class="tl-view-header">
+													<small>2015/11/17</small>
+												</div>
+												<div class="tl-body">
+													<h4 class="tl-title"><i class="fa fa-tag"></i> 天气</h4>
+													<p>
+														春雨惊春清谷天，夏满芒夏暑相连，
+														秋处露秋寒霜降，冬雪雪冬小大寒。
+														上半年是六廿一，下半年来八廿三，
+														每月两节日期定，最多相差一二天。
+													</p>
+													<p>
+														此歌是为便于记忆以名称规律编成，前四句是从每个节气中各取一个字按次序组成的歌诀，是整个节气歌的主体，后四句是二十四个节气的时间规律。即上半年的节气在每月的6日、21日前后，下半年在8日、23日前后。
+													</p>
+													<ul class="tag-view">
+														<li class="tag-item tag-red">11:20 AM</li>
+														<li class="tag-item tag-blue">电商前端部门</li>
+														<li class="tag-item tag-yellow">普通</li>
+													</ul>
+												</div>
+												<div class="tl-body">
+													<h4 class="tl-title"><i class="fa fa-tag"></i> 天气</h4>
+													<p>
+														春雨惊春清谷天，夏满芒夏暑相连，
+														秋处露秋寒霜降，冬雪雪冬小大寒。
+														上半年是六廿一，下半年来八廿三，
+														每月两节日期定，最多相差一二天。
+													</p>
+													<p>
+														此歌是为便于记忆以名称规律编成，前四句是从每个节气中各取一个字按次序组成的歌诀，是整个节气歌的主体，后四句是二十四个节气的时间规律。即上半年的节气在每月的6日、21日前后，下半年在8日、23日前后。
+													</p>
+													<ul class="tag-view">
+														<li class="tag-item tag-red">11:20 AM</li>
+														<li class="tag-item tag-blue">电商前端部门</li>
+														<li class="tag-item tag-yellow">普通</li>
+													</ul>
+												</div>
+												<div class="tl-footer">
+												</div>
+											</div>
+											<div class="tl-view view-yellow">
+												<div class="tl-view-header">
+													<small>2015/11/18</small>
+												</div>
+												<div class="tl-body">
+													<h4 class="tl-title"><i class="fa fa-tag"></i> 天气</h4>
+													<p>
+														春雨惊春清谷天，夏满芒夏暑相连，
+														秋处露秋寒霜降，冬雪雪冬小大寒。
+														上半年是六廿一，下半年来八廿三，
+														每月两节日期定，最多相差一二天。
+													</p>
+													<p>
+														此歌是为便于记忆以名称规律编成，前四句是从每个节气中各取一个字按次序组成的歌诀，是整个节气歌的主体，后四句是二十四个节气的时间规律。即上半年的节气在每月的6日、21日前后，下半年在8日、23日前后。
+													</p>
+													<ul class="tag-view">
+														<li class="tag-item tag-red">11:20 AM</li>
+														<li class="tag-item tag-blue">电商前端部门</li>
+														<li class="tag-item tag-yellow">普通</li>
+													</ul>
+												</div>
+												<div class="tl-footer">
+												</div>
+											</div>
+											<div class="tl-view view-pink">
+												<div class="tl-view-header">
+													<small>2015/11/19</small>
+												</div>
+												<div class="tl-body">
+													<h4 class="tl-title"><i class="fa fa-tag"></i> 天气</h4>
+													<p>
+														春雨惊春清谷天，夏满芒夏暑相连，
+														秋处露秋寒霜降，冬雪雪冬小大寒。
+														上半年是六廿一，下半年来八廿三，
+														每月两节日期定，最多相差一二天。
+													</p>
+													<p>
+														此歌是为便于记忆以名称规律编成，前四句是从每个节气中各取一个字按次序组成的歌诀，是整个节气歌的主体，后四句是二十四个节气的时间规律。即上半年的节气在每月的6日、21日前后，下半年在8日、23日前后。
+													</p>
+													<ul class="tag-view">
+														<li class="tag-item tag-red">11:20 AM</li>
+														<li class="tag-item tag-blue">电商前端部门</li>
+														<li class="tag-item tag-yellow">普通</li>
+													</ul>
+												</div>
+												<div class="tl-footer">
+												</div>
+											</div>
+											<div class="tl-view view-green">
+												<div class="tl-view-header">
+													<small>2015/11/20</small>
+												</div>
+												<div class="tl-body">
+													<h4 class="tl-title"><i class="fa fa-tag"></i> 天气</h4>
+													<p>
+														春雨惊春清谷天，夏满芒夏暑相连，
+														秋处露秋寒霜降，冬雪雪冬小大寒。
+														上半年是六廿一，下半年来八廿三，
+														每月两节日期定，最多相差一二天。
+													</p>
+													<p>
+														此歌是为便于记忆以名称规律编成，前四句是从每个节气中各取一个字按次序组成的歌诀，是整个节气歌的主体，后四句是二十四个节气的时间规律。即上半年的节气在每月的6日、21日前后，下半年在8日、23日前后。
+													</p>
+													<ul class="tag-view">
+														<li class="tag-item tag-red">11:20 AM</li>
+														<li class="tag-item tag-blue">电商前端部门</li>
+														<li class="tag-item tag-yellow">普通</li>
+													</ul>
+												</div>
+												<div class="tl-footer">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-panel fade">
+										<div class="task-list">
+											<div class="task-list-header">
+												<h3>待办任务</h3>
+											</div>
+											<div class="task-list-item">
+												<div class="checkbox pull-left">
+													<label>
+														<input type="checkbox" value>
+														<i class="input-helper"></i>
+													</label>
+												</div>
+												<div class="item-content">
+													<p>
+														本月代码review,所有人必须在本周完成在Crucible平台提交审核与被审核操作。具体操作详见附件ppt。
+													</p>
+												</div>
+												<ul class="tag-view">
+													<li class="tag-item tag-default">2015/11/16 12:00~2015/11/18 12:00</li>
+													<li class="tag-item tag-default">创建人: 崔海雨</li>
+												</ul>
+											</div>
+											<div class="task-list-item">
+												<div class="checkbox pull-left">
+													<label>
+														<input type="checkbox" value>
+														<i class="input-helper"></i>
+													</label>
+												</div>
+												<div class="item-content">
+													<p>
+														本月代码review,所有人必须在本周完成在Crucible平台提交审核与被审核操作。具体操作详见附件ppt。
+													</p>
+												</div>
+												<ul class="tag-view">
+													<li class="tag-item tag-default">2015/11/16 12:00~2015/11/18 12:00</li>
+													<li class="tag-item tag-default">创建人: 崔海雨</li>
+												</ul>
+											</div>
+											<div class="task-list-item">
+												<div class="checkbox pull-left">
+													<label>
+														<input type="checkbox" value>
+														<i class="input-helper"></i>
+													</label>
+												</div>
+												<div class="item-content">
+													<p>
+														本月代码review,所有人必须在本周完成在Crucible平台提交审核与被审核操作。具体操作详见附件ppt。
+													</p>
+												</div>
+												<ul class="tag-view">
+													<li class="tag-item tag-default">2015/11/16 12:00~2015/11/18 12:00</li>
+													<li class="tag-item tag-default">创建人: 崔海雨</li>
+												</ul>
+											</div>
+											<div class="task-list-item">
+												<div class="checkbox pull-left">
+													<label>
+														<input type="checkbox" value>
+														<i class="input-helper"></i>
+													</label>
+												</div>
+												<div class="item-content">
+													<p>
+														本月代码review,所有人必须在本周完成在Crucible平台提交审核与被审核操作。具体操作详见附件ppt。
+													</p>
+												</div>
+												<ul class="tag-view">
+													<li class="tag-item tag-default">2015/11/16 12:00~2015/11/18 12:00</li>
+													<li class="tag-item tag-default">创建人: 崔海雨</li>
+												</ul>
+											</div>
+											<div class="task-list-item">
+												<div class="checkbox pull-left">
+													<label>
+														<input type="checkbox" value>
+														<i class="input-helper"></i>
+													</label>
+												</div>
+												<div class="item-content">
+													<p>
+														本月代码review,所有人必须在本周完成在Crucible平台提交审核与被审核操作。具体操作详见附件ppt。
+													</p>
+												</div>
+												<ul class="tag-view">
+													<li class="tag-item tag-default">2015/11/16 12:00~2015/11/18 12:00</li>
+													<li class="tag-item tag-default">创建人: 崔海雨</li>
+												</ul>
+											</div>
+											<div class="task-list-footer">
+												<button>全部</button>
+											</div>
+										</div>
+									</div>
+									<div class="tab-panel fade">
+
+									</div>
+									<div class="tab-panel fade">
+
+									</div>
+									<div class="tab-panel fade">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" id="header-bottom">
+				<div class="nav nav-bottom">
+					<div class="burger hover-cover"  id="bottom-menu">
+						<div class="burger-part">
+						</div>
+					</div>
+				</div>
+				<div class="settings settings-bottom">
+					<div class="settings-box hover-cover">
+						<div class="settings-sign">
+							<i class="fa fa-cog"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div style="height:200%">
+			</div>
+		</div>
+		<div class="side-bar" id="side-bar">
+			<div class="nav-title">
+				<h2>MENU</h2>
+			</div>
+			<ul class="nav-list">
+				<li class="nav-item" data-sub-menu="task-sub">
+					<a class="nav-link" href="index.html">
+						<span class="nav-sign"><i class="fa fa-home"></i></span>
+						<span class="nav-tip">首页</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="table.html">
+						<span class="nav-sign"><i class="fa fa-table"></i></span>
+						<span class="nav-tip">表格</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="form.html">
+						<span class="nav-sign"><i class="fa fa-newspaper-o"></i></span>
+						<span class="nav-tip">表单</span>
+						<div class="bottom-line"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/animation-util.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

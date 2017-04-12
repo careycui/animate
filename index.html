@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="components/font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ez-system/css/common.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/common.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/layouts.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/index.css">
+	<link rel="stylesheet" type="text/css" href="custome-animate/imgslide/imgslider.css">
+	<!--[if lt IE 9]>
+	    <script src="components/response/response.min.js"></script>
+	<![endif]-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+<body>
+	<div class="page-main">
+		<div class="side-menu">
+			<div class="logo">
+				<a href="/">
+					<img src="layouts/images/logo.png" height="80" width="150">
+				</a>
+			</div>
+			<div class="side-inner">
+				<div class="placeholder"></div>
+				<ul class="side-inner-menu" id="side-inner-menu">
+					<li class="first-menu active" data-sub-menu="animation">
+						<a href="javascript:;">动画效果</a>
+					</li>
+					<ul class="second-ul active slide" id="animation">
+						<li class="second-menu">
+							<a href="fullscreen.html">全屏切换</a>
+						</li>
+						<li class="second-menu">
+							<a href="index.html">图片轮播</a>
+						</li>
+						<li class="second-menu">
+							<a href="scrollani.html">视区动画</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">汉堡图标</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">按钮</a>
+						</li>
+						<li class="second-menu">
+							<a href="animation.html">常用</a>
+						</li>
+					</ul>
+					<li class="first-menu" data-sub-menu="store">
+						<a href="javascript:;">萤石新商城</a>
+					</li>
+					<ul class="second-ul" id="store">
+						<li class="second-menu">
+							<a href="javascript:;">商城前端</a>
+						</li>
+						<li class="second-menu">
+							<a href="ez-system/index.html" target="_blank">商城后端</a>
+						</li>
+					</ul>
+					<li class="first-menu">
+						<a href="javascript:;">Angular Js</a>
+					</li>
+					<li class="first-menu">
+						<a href="javascript:;">React Js</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="content-main">
+				<div class="content-header">
+					<h1>图片轮播</h1>
+				</div>
+				<div class="content-item" id="item-animate">
+					<div class="stage-item">
+						<div class="img-stage">
+							<div id="slide-img">
+					          <div class="img-item">
+					          	<img src="layouts/images/slide/1.jpg" height="400" width="700">
+					          </div>
+					          <div class="img-item">
+					          	<img src="layouts/images/slide/2.jpg" height="400" width="700">
+					          </div>
+					          <div class="img-item">
+					          	<img src="layouts/images/slide/3.jpg" height="400" width="700">
+					          </div>
+					          <div class="imgslide-nav" id="slide-nav">
+		                            <ul class="clearfix">
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                            </ul>
+		                        </div>
+							</div>
+						</div>
+						<div class="button-stage">
+							<button class="btn btn-default btn-l" id="fade">渐变</button>
+							<button class="btn btn-default btn-l" id="slide-left">滑动</button>
+						</div>
+						<div class="line color-red"></div>
+					</div>
+					<div class="stage-item">
+						<div class="img-stage">
+							<div id="slide3d-img">
+								<div class="img-item">
+									<img src="layouts/images/slide/1.jpg" height="400" width="700">
+					            </div>
+						        <div class="img-item">
+						        	<img src="layouts/images/slide/2.jpg" height="400" width="700">
+						        </div>
+						        <div class="img-item">
+						        	<img src="layouts/images/slide/3.jpg" height="400" width="700">
+						        </div>
+							</div>
+					        <div class="imgslide-nav" id="slide3d-nav">
+	                            <ul class="clearfix">
+	                                <li class="imgslide-nav-item">
+	                                    <span></span>
+	                                </li>
+	                                <li class="imgslide-nav-item">
+	                                    <span></span>
+	                                </li>
+	                                <li class="imgslide-nav-item">
+	                                    <span></span>
+	                                </li>
+	                            </ul>
+	                        </div>
+						</div>
+						<div class="button-stage">
+							<button class="btn btn-default btn-l" id="">立体</button>
+						</div>
+						<div class="img-stage">
+							<div id="slideFlip-img">
+								<div class="img-item">
+									<div id="first" style="position:absolute;left:0;top:0;height:400px;width:349px;background:url('layouts/images/slide/1.jpg') no-repeat left center;z-index:2;">
+									</div>
+									<div id="flip-3d" style="-webkit-transform-style: preserve-3d;position:absolute;top:0;left:0;width:700px;height:400px;z-index:1;">
+										<img id="first-img" src="layouts/images/slide/1.jpg" height="400" width="700" style="-webkit-transform:scale(1,1)">
+										<img id="second-img" src="layouts/images/slide/2.jpg" height="400" width="700" style="display:none;-webkit-transform:scale(-1,1)">
+									</div>
+									<div id="second" style="position:absolute;height:400px;width:349px;right:0px;background:url('layouts/images/slide/2.jpg') no-repeat 100% 100%;top:0;">
+									</div>
+					            </div>
+					            <div class="imgslide-nav" id="slideFlip-nav">
+		                            <ul class="clearfix">
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                                <li class="imgslide-nav-item">
+		                                    <span></span>
+		                                </li>
+		                            </ul>
+		                        </div>
+							</div>
+						</div>
+						<div class="button-stage">
+							<button class="btn btn-default btn-l" id="flip-btn">翻页</button>
+						</div>
+					</div>
+				</div>
+				<div class="content-item">
+					<div id="logo" style="width:100px;height:100px;background-color:red;position:absolute;left:0;"></div>
+				</div>
+			</div>
+			<div class="info-box">
+				<a href="custome-animate/fullpage.html" target="_blank">
+					<i class="fa fa-play"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+		  var logo = document.getElementById("logo");
+		  TweenLite.to(logo, 2, {left:"542px", backgroundColor:"black", borderBottomColor:"#90e500", color:"white"});
+		};
+	</script>
+	<script type="text/javascript" src="components/seajs/dist/sea.js"></script>
+	<script type="text/javascript">
+		seajs.use('./layouts/js/layouts.js');
+	</script>
+</body>
+</html>

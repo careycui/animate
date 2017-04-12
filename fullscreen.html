@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>全屏切换</title>
+	<link rel="stylesheet" type="text/css" href="components/font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ez-system/css/common.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/common.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/layouts.css">
+	<link rel="stylesheet" type="text/css" href="layouts/css/index.css">
+	<link rel="stylesheet" type="text/css" href="custome-animate/fullpageslide/ys-slide.css">
+	<!--[if lt IE 9]>
+	    <script src="components/response/response.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="page-main">
+		<div class="side-menu">
+			<div class="logo">
+				<a href="/">
+					<img src="layouts/images/logo.png" height="80" width="150">
+				</a>
+			</div>
+			<div class="side-inner">
+				<div class="placeholder"></div>
+				<ul class="side-inner-menu" id="side-inner-menu">
+					<li class="first-menu active" data-sub-menu="animation">
+						<a href="javascript:;">动画效果</a>
+					</li>
+					<ul class="second-ul active slide" id="animation">
+						<li class="second-menu">
+							<a href="fullscreen.html">全屏切换</a>
+						</li>
+						<li class="second-menu">
+							<a href="index.html">图片轮播</a>
+						</li>
+						<li class="second-menu">
+							<a href="scrollani.html">视区动画</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">汉堡图标</a>
+						</li>
+						<li class="second-menu">
+							<a href="javascript:;">按钮</a>
+						</li>
+						<li class="second-menu">
+							<a href="animation.html">常用</a>
+						</li>
+					</ul>
+					<li class="first-menu" data-sub-menu="store">
+						<a href="javascript:;">萤石新商城</a>
+					</li>
+					<ul class="second-ul" id="store">
+						<li class="second-menu">
+							<a href="javascript:;">商城前端</a>
+						</li>
+						<li class="second-menu">
+							<a href="ez-system/index.html" target="_blank">商城后端</a>
+						</li>
+					</ul>
+					<li class="first-menu">
+						<a href="javascript:;">Angular Js</a>
+					</li>
+					<li class="first-menu">
+						<a href="javascript:;">React Js</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="ys-cont" id="ys-cont">
+				<div class="panel" style="background-color:#fff;" data-anchor-name="First">
+					<div class="content-main">
+						<div class="content-header">
+							<h1>全屏切换</h1>
+						</div>
+					</div>
+				</div>
+				<div class="panel" style="background-color:#fff;" data-anchor-name="Second">
+				</div>
+				<div class="panel" style="background-color:#fff;" data-anchor-name="Third">
+				</div>
+				<div class="panel" style="background-color:#fff;" data-anchor-name="forth">
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="components/seajs/dist/sea.js"></script>
+	<script type="text/javascript">
+		seajs.use('./layouts/js/fullscreen.js');
+	</script>
+</body>
+</html>

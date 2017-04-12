@@ -1,0 +1,83 @@
+
+//base font family
+$baseFontFamily :  roboto, 'Microsoft YaHei' !default;
+
+//base font color
+$baseFontColor : #5e5e5e !default;
+
+//base font size
+$baseFontSize : 14px !default;
+
+//small font size
+$baseSmallFontSize : 12px !default;
+
+//big font size
+$baseBigFontSize : 18px !default;
+
+//btn base attribute
+//base btn attribute
+$btnMinWidth : 40px !default;
+
+$btnLineHeight : 1.4em !default;
+$btnRadius : 2px !default;
+
+//btn size
+$btnPaddingH : 12px !default;
+$btnPaddingV : 6px !default;
+$btnSmallPaddingH : 8px !default;
+$btnSmallPaddingV : 2px !default;
+$btnBigPaddingH : 16px !default;
+$btnBigPaddingV : 10px !default;
+
+//btn types
+$btnDefaultColor : #fafafa;
+$btnDefault: (
+	bgColor : $btnDefaultColor,
+	fontColor : $baseFontColor,
+	bgHoverColor : lighten($btnDefaultColor,5%),
+	fontHoverColor: lighten($baseFontColor,20%)
+);
+
+$btnInfoColor : #00bcd4;
+$btnInfoFontC : #fff;
+$btnInfo: (
+	bgColor : $btnInfoColor,
+	fontColor : $btnInfoFontC,
+	bgHoverColor : lighten($btnInfoColor,5%),
+	fontHoverColor : $btnInfoFontC
+);
+
+$btnWarningColor : #ff9800;
+$btnWarningFontC : #fff;
+$btnWarning: (
+	bgColor : $btnWarningColor,
+	fontColor : $btnWarningFontC,
+	bgHoverColor : lighten($btnWarningColor,10%),
+	fontHoverColor : $btnWarningFontC
+);
+
+$btnPrimaryColor : #2196f3;
+$btnPrimaryFontC : #fff;
+$btnPrimary: (
+	bgColor : $btnPrimaryColor,
+	fontColor : $btnPrimaryFontC,
+	bgHoverColor : lighten($btnPrimaryColor,10%),
+	fontHoverColor : $btnPrimaryFontC
+);
+
+$btnDangerColor : #c62828;
+$btnDangerFontC : #fff;
+$btnDanger: (
+	bgColor : $btnDangerColor,
+	fontColor : $btnDangerFontC,
+	bgHoverColor : lighten($btnDangerColor,10%),
+	fontHoverColor : $btnDangerFontC
+);
+
+
+
+
+
+
+
+
